@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CLUSTERING</title>
+  </head>
+  <body>
+
+    <h1>KMeans Clustering </h1>
+    <div class="description">
+      <p>Please upload a numberic CSV file</p>
+
+      <p>This program uses a KMeans alogorithm to cluster similar data, this program also displays the center point within the cluster</p>
+    </div>
+
+    <br>
+    
+          <form enctype = "multipart/form-data" action = "../cgi-bin/clustering.py" method = "post">
+            <p>File: <input type = "file" name = "filename" required /></p>
+            <!-- <p>Please enter a number of clusters <input type="text" name="clusterSize" required> </p> -->
+            <label for="cars" name="clusterSize" required>Choose a number of clusters: </label>
+                <select name="clusterSize" id="cars">
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                  <option  value="6">6</option>
+                </select>
+
+            <p><input type = "submit" value = "Upload" /></p>
+
+         </form>
+  </body>
+</html>
